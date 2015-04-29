@@ -22,5 +22,6 @@
 
     <modules>
         <module>start</module>
+        <module>boot</module>
     </modules>
 </project>
