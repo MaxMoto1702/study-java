@@ -27,7 +27,7 @@
     </properties>
 
     <modules>
-
+        <module>spring</module>
     </modules>
 
     <dependencies>
