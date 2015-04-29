@@ -22,5 +22,6 @@
 
     <modules>
         <module>start</module>
+        <module>rest-service</module>
     </modules>
 </project>
