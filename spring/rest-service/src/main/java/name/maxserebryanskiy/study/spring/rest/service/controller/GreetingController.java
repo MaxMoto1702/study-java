@@ -1,5 +1,6 @@
-package name.maxserebryanskiy.study.spring.rest.service;
+package name.maxserebryanskiy.study.spring.rest.service.controller;
 
+import name.maxserebryanskiy.study.spring.rest.service.domain.Greeting;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

@@ -18,6 +18,7 @@
 
     <properties>
         <spring.version>4.1.6.RELEASE</spring.version>
+        <javax.servlet>3.1.0</javax.servlet>
     </properties>
 
     <modules>

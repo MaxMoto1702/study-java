@@ -1,4 +1,4 @@
-package name.maxserebryanskiy.study.spring.rest.service;
+package name.maxserebryanskiy.study.spring.rest.service.domain;
 
 /**
  * Created by m on 29.04.2015.
