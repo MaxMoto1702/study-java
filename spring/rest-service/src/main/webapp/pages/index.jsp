@@ -6,7 +6,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
-    var prefix = '/rest-service/myservice';
+    var prefix = '/myservice';
 
     var RestGet = function () {
         $.ajax({
