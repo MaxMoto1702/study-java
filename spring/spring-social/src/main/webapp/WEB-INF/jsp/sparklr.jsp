@@ -1,8 +1,8 @@
 <%@ taglib prefix="authz"
            uri="http://www.springframework.org/security/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -29,48 +29,25 @@
     </div>
     <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-            <li><a href="${base}index.jsp" class="selected">home</a></li>
+            <li><a href="${base}index.jsp">home</a></li>
             <authz:authorize ifNotGranted="ROLE_USER">
                 <li><a href="${base}login.jsp">login</a></li>
             </authz:authorize>
-            <li><a href="${base}sparklr/photos">sparklr pics</a></li>
+            <li><a href="${base}sparklr/photos" class="selected">sparklr
+                pics</a></li>
             <li><a href="${base}facebook/info">facebook friends</a></li>
         </ul>
     </div>
 </div>
 
 <div class="container">
-
-    <h1>Welcome to Tonr!</h1>
-
-    <p>
-        This is a website that will allow you to print your photos that
-        you've uploaded to <a href="http://localhost:8080/sparklr2/">Sparklr</a>!
-        And since this site uses <a href="http://oauth.net">OAuth</a> to
-        access your photos, we will never ask you for your Sparklr
-        credentials.
-    </p>
-
-    <p>Tonr.com has only two users: "marissa" and "sam". The password
-        for "marissa" is password is "wombat" and for "sam" is password is
-        "kangaroo".</p>
-
-    <authz:authorize ifNotGranted="ROLE_USER">
-        <p>
-            <a href="<c:url value="login.jsp"/>">Login to Tonr</a>
-        </p>
-    </authz:authorize>
-    <authz:authorize ifAllGranted="ROLE_USER">
-        <p>
-            <a href="<c:url value="/sparklr/photos"/>">View my Sparklr
-                photos</a>
-        </p>
-
-        <p>
-            <a href="<c:url value="/logout.do"/>">Logout</a>
-        </p>
-    </authz:authorize>
-
+    <h1>Your Sparklr Photos</h1>
+    <ul class="list-unstyled">
+        <c:forEach var="sparklrPhotoId" items="${photoIds}">
+            <li><img
+                    src="${base}sparklr/photos/${sparklrPhotoId}"/></li>
+        </c:forEach>
+    </ul>
 </div>
 </body>
 </html>

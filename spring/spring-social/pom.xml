@@ -16,8 +16,51 @@
 
     <name>spring-social Maven Webapp</name>
 
+    <properties>
+        <spring.social.version>1.1.0.RELEASE</spring.social.version>
+        <spring.facebook.version>2.0.0.RELEASE</spring.facebook.version>
+        <spring.security.version>4.0.0.RELEASE</spring.security.version>
+        <spring.security.oauth.version>2.0.7.RELEASE</spring.security.oauth.version>
+    </properties>
+
     <dependencies>
+        <!--Spring Social-->
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-core</artifactId>
+            <version>${spring.social.version}</version>
+        </dependency>
+        <!--Spring Facebook-->
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-facebook</artifactId>
+            <version>${spring.facebook.version}</version>
+        </dependency>
+        <!--Spring Twitter-->
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-twitter</artifactId>
+            <version>${spring.social.version}</version>
+        </dependency>
+        <!--Spring Security-->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>${spring.security.version}</version>
+        </dependency>
+        <!--Spring Security OAuth-->
+        <dependency>
+            <groupId>org.springframework.security.oauth</groupId>
+            <artifactId>spring-security-oauth2</artifactId>
+            <version>${spring.security.oauth.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+        </dependency>
     </dependencies>
+
     <build>
         <finalName>spring-social</finalName>
     </build>
