@@ -19,4 +19,7 @@
     <properties>
         <spring.version>4.1.6.RELEASE</spring.version>
     </properties>
+    <modules>
+        <module>start</module>
+    </modules>
 </project>
