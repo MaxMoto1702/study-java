@@ -34,14 +34,14 @@ public class Education {
         @JsonProperty("year")
         private Integer year;
         @JsonProperty("result_id")
-        private JSONObject$Null resultId;
+        private String resultId;
         @JsonProperty("organization_id")
-        private JSONObject$Null organizationId;
+        private String organizationId;
         @JsonProperty("organization")
         private String organization;
         @JsonProperty("name")
         private String name;
         @JsonProperty("name_id")
-        private JSONObject$Null nameId;
+        private String nameId;
     }
 }
