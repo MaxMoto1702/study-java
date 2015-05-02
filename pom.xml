@@ -29,6 +29,7 @@
     <modules>
         <module>spring</module>
         <module>jackson</module>
+        <module>tiles</module>
     </modules>
 
     <dependencies>
