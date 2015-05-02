@@ -24,7 +24,11 @@
         <yandex.property.version>1.6</yandex.property.version>
         <jackson.version>2.5.3</jackson.version>
         <jetty.version>9.3.0.M2</jetty.version>
+
+        <spring.version>4.1.6.RELEASE</spring.version>
+        <javax.servlet>3.1.0</javax.servlet>
     </properties>
+
 
     <modules>
         <module>spring</module>
