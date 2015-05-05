@@ -3,14 +3,30 @@
         "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
 <tiles-definitions>
     <definition name="baseLayout" template="/WEB-INF/jsp/layout/layout.jsp">
-        <put-attribute name="title" value="Spring 3 MVC & Apache Tiles 2"/>
+        <put-attribute name="title" value="Spring 3 MVC and Apache Tiles 2"/>
         <put-attribute name="header" value="/WEB-INF/jsp/layout/header.jsp"/>
+        <put-attribute name="navigation" value="/WEB-INF/jsp/layout/navigation.jsp"/>
         <put-attribute name="body" value=""/>
         <put-attribute name="footer" value="/WEB-INF/jsp/layout/footer.jsp"/>
     </definition>
 
     <definition name="home" extends="baseLayout">
-        <put-attribute name="title" value="Home > Spring 3 MVC & Apache Tiles 2"/>
+        <put-attribute name="title" value="Главная"/>
         <put-attribute name="body" value="/WEB-INF/jsp/home.jsp"/>
+    </definition>
+
+    <definition name="resume" extends="baseLayout">
+        <put-attribute name="title" value="Резюме"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/resume.jsp"/>
+    </definition>
+
+    <definition name="projects" extends="baseLayout">
+        <put-attribute name="title" value="Проекты"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/projects.jsp"/>
+    </definition>
+
+    <definition name="contacts" extends="baseLayout">
+        <put-attribute name="title" value="Контакты"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/contacts.jsp"/>
     </definition>
 </tiles-definitions>

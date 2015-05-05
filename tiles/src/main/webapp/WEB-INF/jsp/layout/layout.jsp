@@ -10,12 +10,19 @@
 <html>
 <head>
     <title><tiles:insertAttribute name="title" ignore="true"/></title>
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
-
 <tiles:insertAttribute name="header"/>
-<tiles:insertAttribute name="body"/>
+<tiles:insertAttribute name="navigation"/>
+<div class="content">
+    <div style="position: absolute; top: 250px">
+        <tiles:insertAttribute name="body"/>
+    </div>
+</div>
 <tiles:insertAttribute name="footer"/>
-
 </body>
 </html>

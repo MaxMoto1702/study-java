@@ -5,4 +5,5 @@
     Time: 17:41
     To change this template use File | Settings | File Templates.
 --%>
-<h2>Home page</h2>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<h2>Здравствуйте</h2>
